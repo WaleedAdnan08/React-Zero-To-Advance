@@ -1,14 +1,11 @@
+import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
-
 function ExpenseItem(props) {
-    const expenseDate = new Date(2021, 2, 28);
-    const expenseTitle = 'Car Insurance'
-    const expenseAmount = 500;
     return <div className='expense-item'>
-        <div>{expenseDate.toISOString()}</div>
+        <ExpenseDate date={props.date}/> {/*This is a self closing tag, same as <ExpenseItem></ExpenseItem>*/}
         <div className='expense-item__description'>
-            <h2>{props}</h2>
-            <div className='expense-item__price'>{expenseAmount}</div>
+            <h2>{props.title}</h2>
+            <div className='expense-item__price'>{props.amount}</div>
         </div>
     </div>
 }
