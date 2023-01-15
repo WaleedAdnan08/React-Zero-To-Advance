@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Card from '../UI/Card';
 
 const AddUser = props => {
     const AddUserHandler = (event) => {
