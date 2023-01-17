@@ -21,19 +21,19 @@ Before getting started, you will need to have the following software installed o
 
 The project is structured as follows:
 
-my-react-project/
-├── node_modules/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── App.js
-│   │   └── ...
-│   ├── index.js
-│   └── ...
-├── package.json
-└── ...
+my-react-project/ <br />
+├── node_modules/ <br />
+├── public/ <br />        
+│   ├── index.html <br />
+│   └── ... <br />
+├── src/ <br />
+│   ├── components/ <br />
+│   │   ├── App.js <br />
+│   │   └── ... <br />
+│   ├── index.js <br />
+│   └── ... <br />
+├── package.json <br />
+└── ... 
 
 - `node_modules/`: This folder contains all of the project's dependencies, as installed by npm.
 - `public/`: This folder contains the project's `index.html` file and any other static assets.
