@@ -23,7 +23,7 @@ The project is structured as follows:
 
 my-react-project/ <br />
 ├── node_modules/ <br />
-├── public/ <br />        
+├── public/       
 │   ├── index.html <br />
 │   └── ... <br />
 ├── src/ <br />
