@@ -1,6 +1,9 @@
 import React from 'react';
+import Card from '../UI/Card';
+
 const UserList = props => {
     return (
+        <Card>
         <ul>
             {props.users.map(user => (
                 <li>
@@ -8,6 +11,8 @@ const UserList = props => {
                 </li>
             ))}
         </ul>
+    </Card>
     );
 };
+
 export default UserList;
