@@ -52,7 +52,7 @@ const AddUser = (props) => {
           title={error.title}
           message={error.message}
           onConfirm={errorHandler}
-        /> 
+        />
       )}
       <Card key="add-user-card" className={classes.input}>
         <form onSubmit={addUserHandler}>
