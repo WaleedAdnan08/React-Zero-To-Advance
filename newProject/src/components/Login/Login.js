@@ -3,6 +3,7 @@ import React, { useState, useEffect, useReducer, useContext } from 'react';
 import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
+// import AuthContext from '../../Store/auth-Context';
 import AuthContext from '../../Store/auth-Context';
 import Input from '../UI/Input/Input';
 
@@ -90,7 +91,15 @@ const Login = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    authCtx.onLogin(emailState.value, passwordState.value);
+    if (formIsValid) {
+      authCtx.onLogin(emailState.value, passwordState.value);
+    }
+    else if (!emailIsValid) {
+
+    }
+    else {
+
+    }
   };
 
   return (
@@ -111,12 +120,12 @@ const Login = (props) => {
           label="Password"
           type="password"
           isValid={passwordIsValid}
-          value={passwordState.value} 
+          value={passwordState.value}
           onChange={passwordChangeHandler}
           onBlur={validatePasswordHandler}
         />
         <div className={classes.actions}>
-          <Button type="submit" className={classes.btn} disabled={!formIsValid}>
+          <Button type="submit" className={classes.btn} >
             Login
           </Button>
         </div>
